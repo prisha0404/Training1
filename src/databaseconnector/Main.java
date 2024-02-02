@@ -11,10 +11,10 @@ import static java.sql.DriverManager.getConnection;
 
 public class Main {
     public Main(String text ) throws SQLException,ClassNotFoundException {
-        String URL="jdbc:mysql://localhost:3307/student ";
+        String URL="jdbc:mysql://localhost:3307/person ";
         String username="root";
         String password="root";
-        String query="Select * from person";
+        String query="Select * from users";
         forName("com.mysql.cj.jdbc.Driver");
         Connection con= getConnection(URL,username,password);
         System.out.println("connection established successfully");
